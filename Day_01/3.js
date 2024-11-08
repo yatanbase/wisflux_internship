@@ -1,4 +1,4 @@
-// array of first names out of array
+//members between ages 41 -60
 
 const members = [
     {name:'Aman Makhija', age:20},
@@ -9,11 +9,9 @@ const members = [
     {name:'Hardik Dhwan', age:51},
 ]
 
-let first_name =[];  //empty array  to store first names
-
-
-first_name = members.map((e)=>{
-    return  e.name.split(' ')[0];   //spliting by gap and taking first name only
+members.map((e)=>{
+    if(e.age >= 41 && e.age <= 60){
+        console.log(e)
+    }
 })
 
-console.log(first_name); //log result

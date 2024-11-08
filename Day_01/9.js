@@ -1,5 +1,3 @@
-// array of first names out of array
-
 const members = [
     {name:'Aman Makhija', age:20},
     {name:'Himanshu Jangid', age:40},
@@ -9,11 +7,8 @@ const members = [
     {name:'Hardik Dhwan', age:51},
 ]
 
-let first_name =[];  //empty array  to store first names
+//adding new memeber at index 0 in new array
+const new_arr = [{name:'test',age:19},...members]
 
+console.log(new_arr);
 
-first_name = members.map((e)=>{
-    return  e.name.split(' ')[0];   //spliting by gap and taking first name only
-})
-
-console.log(first_name); //log result

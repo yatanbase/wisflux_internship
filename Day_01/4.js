@@ -1,4 +1,4 @@
-// array of first names out of array
+//Average age
 
 const members = [
     {name:'Aman Makhija', age:20},
@@ -8,12 +8,12 @@ const members = [
     {name:'Kartik Dhwan', age:45},
     {name:'Hardik Dhwan', age:51},
 ]
+let age_sum =members.reduce((sum,e)=>{
+    return sum + e.age;             //sum of ages
+},0)
 
-let first_name =[];  //empty array  to store first names
+age_avg = age_sum/members.length ; // average 
+
+console.log(Math.floor(age_avg)); // floor method to remove values after decimal
 
 
-first_name = members.map((e)=>{
-    return  e.name.split(' ')[0];   //spliting by gap and taking first name only
-})
-
-console.log(first_name); //log result
