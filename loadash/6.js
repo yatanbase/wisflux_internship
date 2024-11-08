@@ -6,7 +6,8 @@ const members = [
     {name: 'Rakesh Shrivastava', age: 41},
     {name: 'Chandraprakash Sharma', age: 17},
     {name: 'Kartik Dhwan', age: 45},
-    {name: 'Hardik Dhwan', age: 51}
+    {name: 'Hardik Dhwan', age: 51},
+    {name : 'kcuh bhi'}
 ];
 
 // Using Lodash's `_.groupBy` to group members based on conditions
